@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Notifications Container */
+  .notifications-container {
+    background-color: #f4f7fa;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1100px;
+    margin-left: 260px;
+    margin-top: 1px;
+  }
+  
+  /* Title Styling */
+  .notifications-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  /* Section Date Title */
+  .notification-date {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Notification Card Styling */
+  .notification-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .notification-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Icon Styling */
+  .notification-icon {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    color: #6b7280;
+    padding: 10px;
+  }
+  
+  /* Content Styling */
+  .notification-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  /* Notification Header */
+  .notification-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+  }
+  
+  /* Title and Description Styling */
+  .notification-header-title-description {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .notification-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+  }
+  
+  .notification-description {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  /* Notification Time and Status */
+  .notification-time-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+    justify-content: flex-start;
+  }
+  
+  .notification-status {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #10b981; /* Green color for status */
+    margin: 0;
+  }
+  
+  /* Hover Effects */
+  .notification-title:hover {
+    color: #1d4ed8; /* Blue color on hover */
+    cursor: pointer;
+  }
+  
+  .notification-card:hover .notification-title {
+    color: #1d4ed8; /* Change title color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .notification-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .notification-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .notification-header-title-description {
+      flex: none;
+    }
+  
+    .notification-time-status {
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  }
+  

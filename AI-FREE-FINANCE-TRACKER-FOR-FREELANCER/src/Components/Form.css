@@ -1,0 +1,162 @@
+/* styles.css */
+
+/* Center the form vertically and horizontally */
+/* IncomeForm.css */
+/* body {
+  margin: 0;
+  height: 100vh; /* Full height viewport */
+  /* display: flex;
+  justify-content: center; /* Center horizontally */
+  /* align-items: center; /* Center vertically */
+  /* font-family: 'poppins';
+}   */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+ .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+} 
+
+.income-form-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+  min-height: 90vh;
+  min-width: 250vh;       /* Ensure full viewport height */
+  margin-bottom: 10px;
+  margin-left: 300px;
+  margin-top: 65px;
+  background-color: #f5f5f5; /* Change to a lighter shade */
+}
+
+.amount-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.currency-input {
+  display: flex; /* Make currency and input side by side */
+  align-items: center; /* Vertically align */
+  width: 100%;
+}
+
+.currency-input select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Rounded left corners */
+  border-right: none; /* Remove right border */
+  appearance: none; /* Remove default dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.currency-input input[type="number"] {
+  border-radius: 0 4px 4px 0; /* Rounded right corners */
+  border-left: none; /* Remove left border */
+  flex-grow: 1; /* Allow input to take up remaining space */
+}
+
+.currency-input select:focus,
+.currency-input input:focus {
+  outline: 1px solid blue;
+}
+
+.income-form {
+  position: relative; /* Added for positioning the close button inside the form */
+  background-color: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Width as a percentage of the parent */
+  max-width: 700px;
+  border: 4px solid #513a88;
+}
+.close-button-income {
+  position: absolute;
+  top: 20px; /* Adjusted for better placement */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555; /* Default color */
+  transition: color 0.2s ease-in-out;
+  margin-left: 550px;
+}
+
+.close-button-income:hover {
+  color: #ff4d4d; /* Red color on hover */
+}
+
+.income-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  
+}
+
+.form-group label {
+  display: block; /* Make labels stack above inputs */
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.income-form input[type="text"],
+.income-form input[type="number"],
+.income-form input[type="date"],
+.currency-input input[type="number"] {
+  width: 200%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  font-size: 16px;
+}
+
+.income-form input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.6);
+}
+
+.createincome {
+  padding: 12px 20px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 50%; /* Full width button */
+  margin: 0 auto;
+  display: block;
+  background-color: #513a88; 
+  text-align: center;
+}
+
+
+.button-container:hover {
+  background-color: #513a88; /* Darker shade on hover */
+}
+
+/* .button-container:focus {
+  outline: none;
+} */
+
+/* .button-container-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+} */
+
+/* Fixed Close Button Position and Placement */

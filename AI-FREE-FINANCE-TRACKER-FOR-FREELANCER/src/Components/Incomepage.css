@@ -1,0 +1,161 @@
+.income-page-container {
+  padding: 20px;
+  min-height: 100vh;
+  margin-left: 250px;
+  margin-top: -80px;
+}
+
+.income-page-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 100px;
+  margin-left: 6px;
+  display: inline-block; /* To align inline with the button */
+}
+
+
+.create-income-button {
+  background-color: #3E3FD8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 790px;
+  margin-top: 100px;
+  transition: background-color 0.3s ease;
+ 
+}
+
+.create-income-button:hover {
+  background-color: #3E3FD8;
+}
+
+ .export-container {
+  display: inline-block;
+  right:40%;
+  top: 20px;          /* Distance from the top of the page */
+  left: 50%;          /* Center it horizontally */
+  transform: translateX(10%); /* Adjust for horizontal centering */
+  
+}
+
+
+
+.export-button {
+  background-color: #3E3FD8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 100px;
+ 
+}
+
+.export-button:hover {
+  background-color: #3E3FD8;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.export-container:hover .dropdown {
+  display: block;
+  
+}
+
+.dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: white;
+  border: none;
+  text-align: left;
+  margin-left: 40px;
+
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: #f1f1f1;
+}
+/* Center the p tag below the header and button */
+.income-page-container p {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-top: 30px; /* Add spacing from the header */
+}
+.income-page-container h2{
+  margin-right:800px;
+
+}
+.income-page-container h1{
+  right:100px
+}
+/* Styling for export buttons container */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+ font-family: 'poppins';
+}
+.income-table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+
+
+}
+
+.income-table th,
+.income-table td {
+border: 1px solid #3E3FD8;
+padding: 8px;
+
+
+}
+
+.income-table th {
+background-color: #dedefa;
+text-align: left;
+
+}
+.total-amount {
+margin-top: 20px;
+font-size: 18px;
+color: #3E3FD8;
+text-align: right; /* Align to the right */
+font-weight: bold;
+}
+
+.income-page-container h2 {
+margin-bottom: 10px;
+margin-left: 6px;
+}
+/* .delete-button {
+background-color: #f44336; /* Red color for delete */
+/* color: white;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.delete-button:hover {
+background-color: #d32f2f; /* Darker red on hover */
+/* } */

@@ -1,0 +1,144 @@
+.tax{
+  background-color: #F5F6FA;
+}
+  
+  .tax-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding: 10px;
+    max-width: 70%;
+    max-height: 78%;
+    margin-left: 280px;
+    font-family: #EEF4FF;
+    margin-top: 10px;
+  }
+  
+  .tax-header {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .tax-header h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .tax-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .tax-calculator {
+    width: 60%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tax-calculator h1 {
+    margin-bottom: 2px;
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .tax-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    margin-bottom: 8px;
+    width: 48%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 1px;
+    color: black;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  .tax-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2534b7;
+  }
+
+  .button-tax-container {
+    text-align: center; 
+  }
+  
+  .calculate-tax-button {
+    padding: 10px 50px;
+    background-color:#3E3FD8; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 16px; 
+  }
+  
+  /* .calculate-button:hover {
+    background-color: #45a049; 
+  } */
+  
+  .tax-summary {
+    width: 35%;
+    padding: 14px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tax-summary h3 {
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .tax-summary p {
+    margin: 8px 0;
+    color: #555;
+  }
+  .tax-summary p.new-regime-tax {
+    color: #3546AB;
+  }
+  
+  .tax-slabs {
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+  }
+  
+  /* .old regime {
+    width: 48%;
+    padding: 5px;
+  } */
+
+  .new regime{
+    width: 48%;
+    padding: 5px;
+  }
+ 
+  /**************************************************************************************/

@@ -1,0 +1,139 @@
+/* Profile Page Styles */
+
+.profile-page2 {
+  max-width: 700px; /* Reduced container width for better balance */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-container2 {
+  text-align: left; /* Aligns the text to the left */
+  margin-top: 70px; /* Adds space above to push the text down */
+  padding-left: 260px; /* Reduced padding for a sleeker look */
+}
+
+.account-title2 {
+  font-size: 30px; /* Adjust the font size as needed */ 
+  margin-top: -40px;  /* Adds space below "Account" text */
+  color: #292929;
+  margin-left: 30px;
+}
+
+.profile-header2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info2 h2 {
+  font-size: 13px;
+  margin: 0;
+  margin-left: -3px;
+}
+
+.profile-info2 p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.profile-form2 {
+  margin-top: 20px;
+}
+
+.form-row2 {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group2 label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+  text-align: left;
+}
+
+.form-group2 input,
+.form-group2 select {
+  padding: 8px; /* Reduced padding for compact design */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group2 select {
+  width: 290px; /* Specify a smaller width */
+  padding: 8px; /* Adjust padding for compact design */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px; /* Slightly smaller font */
+}
+
+
+.input-with-icon2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon2 input {
+  flex: 1;
+}
+
+.verified2 {
+  color: green;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.form-actions2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.cancel-btn2,
+.save-btn2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel-btn2 {
+  background-color: transparent;
+  color: #3E3FD8;
+  border: 1px solid #888;
+}
+
+.save-btn2 {
+  background-color: #3E3FD8;
+  color: #fff;
+  border: none;
+}
+.save-btn2:hover {
+  background-color: #2534b7;
+}
+.cancel-btn2:hover {
+  background-color: #e0e0e0;
+}

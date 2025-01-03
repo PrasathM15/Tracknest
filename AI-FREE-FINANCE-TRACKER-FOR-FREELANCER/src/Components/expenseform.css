@@ -1,0 +1,149 @@
+.maindiv{
+    display: flex;
+    flex-direction:row;
+    margin-top: 130px;
+    width:70%;
+    padding: 0%;
+    background: white;
+    
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 350px;
+    margin-right: 100px;
+    
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+
+
+    
+
+   
+       
+
+.wrapper {
+    display: flex;
+  flex-direction: row; /* File name appears below the button */
+  align-items: center; /* Align content to the left */
+  gap: 5px;
+}
+  
+.file-name {
+    font-size: 13px;
+    color: #333;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    word-wrap: break-word; /* Break long words */
+    white-space: normal; /* Allow wrapping onto the next line */
+    max-width: 100px; /* Limit the width of the file name */
+     line-height: 1.4;
+    
+}
+.customfileupload {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    width:fit-content;
+    color: #333;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .customfileupload:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .customfileupload .uploadicon {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #3E3FD8;
+  }
+  
+  
+  
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* body {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;   
+    
+} */
+.row1{
+    display:flex;
+    gap: 60px;
+    margin-left: 20px;
+    margin-top: 4px;
+    
+}
+.inputgroup{
+    flex:1; 
+    display: flex;
+    flex-direction: column;
+       
+}
+label{
+    text-align: left;
+    margin-bottom: 2px;
+}
+input{
+   
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right:94px;
+    
+}
+input:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+  }
+  select:focus{
+    outline: none;
+    border: 1px solid #ccc;
+  }
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addbutton {
+    color: white;
+    background: red;
+    height: 35px;
+    width: 200px;
+    margin-bottom: 60px;
+    margin-right: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Ensure text is properly aligned */
+    font-size: 12px; 
+    margin-left: 20px;
+    /* Adjust text size if necessary */
+  }
+  .addbuttonicon {
+    font-size: 18px; /* Adjust icon size */
+    color: white; /* Ensure icon is white */
+    
+}
+.remove-icon {
+    cursor: pointer;
+    color: red;
+    margin-right: 10px;
+    align-items: flex-end;
+}

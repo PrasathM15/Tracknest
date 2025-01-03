@@ -1,0 +1,241 @@
+
+.threebuttons{
+    display:flex;
+    gap:10px;
+    border-radius: 7px;
+    cursor: pointer;
+    width: max-content;
+    text-align: center;
+    justify-content: flex-end;
+    margin-left:1110px;
+    margin-top: -40px;
+    
+    
+}
+.addexpensebutton{
+    background-color: #7840B0;
+    color:white;
+    border-radius: 7px;
+    gap: 8px;  
+    padding: 8px 12px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 35px;
+    width:max-content;
+    
+}
+.filterbutton{
+    background-color: #4880FF;
+    color:white;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    width:max-content;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 35px;
+    
+        
+}
+
+.exportbutton{
+    background-color: #FFA500;
+    color:white;
+    width:fit-content;
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 35px;
+    width:max-content;
+        
+}
+
+.addexpensebutton,
+.filterbutton,
+.exportbutton {
+    display: flex; /* Enable flex layout */
+    align-items: center; /* Align icon and text vertically */
+    gap: 3px; /* Space between icon and text */
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+}
+.buttonicon{
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+.table-wrapper {
+    margin-left: 260px;
+    border: 1px solid white;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  
+   
+    
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  th {
+    background-color: rgba(62, 63, 216, 0.35); /* 3E3FD8 with 35% opacity */
+    color: inherit; 
+    font-weight: bold;
+    color:black;
+    font-weight: bold;
+  }
+  .dropdown_div {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownmenu_export {
+    display: block;
+    position: absolute;
+    background-color: white;
+   
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+  }
+  
+  .dropdownmenu_export button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdownmenu_export button:hover {
+    background-color: pink;
+    
+    
+  }
+  /*
+
+  .filter_ui {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .filter_group {
+    margin-bottom: 15px;
+  }
+  
+  .filter_group label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .filter_group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filter_actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .applybutton,
+  .resetbutton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .applybutton {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .resetbutton {
+    background-color: #dc3545;
+    color: white;
+  }
+  */
+  .filter_ui {
+    position: absolute; /* Make the filter div float above the content */
+    top: 90px; /* Adjust the position based on your layout */
+    right: 40px; /* Adjust to position the filter box */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    z-index: 10; /* Ensure the filter div is above the table */
+    width: 250px; /* Set a fixed width for the filter box */
+}
+
+.filter_group {
+    margin-bottom: 15px;
+}
+
+.filter_group label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter_group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 100%; /* Make input fields fill the width of the filter box */
+}
+
+.filter_actions {
+    display: flex;
+    gap: 10px;
+}
+
+.applybutton,
+.resetbutton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.applybutton {
+    background-color: #28a745;
+    color: white;
+}
+
+.resetbutton {
+    background-color: #dc3545;
+    color: white;
+}
+

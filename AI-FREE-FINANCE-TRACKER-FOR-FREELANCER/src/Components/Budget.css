@@ -1,0 +1,80 @@
+/* General Page Styling */
+/* Styles for the Budget Page */
+.budget-page {
+  padding: 20px;
+  margin-left: 250px;
+  margin-bottom: 100px;
+}
+
+/* Budget Cards Container */
+.budget-cards {
+  display: flex;
+  flex-wrap: wrap; /* Ensures cards wrap to the next row if there's not enough space */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+/* Budget Card */
+.budget-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Set a fixed width for cards */
+  text-align: center;
+}
+
+.budget-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.budget-amount {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.budget-amount span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Progress Bar Container */
+.progress-bar {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+/* Create New Budget Card */
+/* 'Create New Budget' Card */
+.budget-card.create-new {
+  background-color: #f5f5f5;
+  color: #3546AB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  border: 2px dashed #3546AB;
+  transition: background-color 0.2s, color 0.2s;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.budget-card.create-new:hover {
+  background-color: #3546AB;
+  color: #fff;
+}
+
+

@@ -1,0 +1,445 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  
+  .navbar-left .search-bar {
+    width: 300px;
+    padding: 8px 40px;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .search-bar::placeholder {
+    color: #202224; /* Change this to your desired color */
+    
+  }
+  .search-container {
+  position: relative;
+  width: 250px; /* Adjust the width as needed */
+}
+
+.search-bar {
+  width: 100%;
+  padding-left: 30px; /* Add space on the left side for the icon */
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.search-container i {
+  position: absolute;
+  left: 20px; /* Adjust the icon's position from the left */
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 18px; /* Adjust icon size */
+  color: #aaa; /* Icon color */
+}
+
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .notification {
+    position: relative;
+  }
+  
+  .notification i {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+  
+  .profile-icon img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logo and search bar */
+  }
+  
+  .navbar-logo {
+    height: 40px; /* Adjust height based on your design */
+    width: auto; /* Keep aspect ratio */
+    object-fit: contain; /* Ensure proper scaling */
+    margin-left: 15px;
+  }
+  
+  .hamburger-icon {
+    font-size: 24px; /* Size of the hamburger icon */
+    cursor: pointer;
+    color: #333; 
+    margin-left: 50px;/* Icon color */
+  }
+  
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --color-default:#004f83;
+  --color-second:#0067ac;
+  --color-white:#fff;
+  --color-body:#e4e9f7;
+  --color-light:#e0e0e0;
+}
+
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+}
+
+.sidebar{
+  min-height: 100vh;
+  width: 78px;
+  padding: 6px 14px;
+  z-index: 99;
+  background-color: white;
+  transition: all .5s ease;
+  position: fixed;
+  top:0;
+  left: 0;
+}
+
+.sidebar.open{
+  width: 250px;
+}
+
+.sidebar .logo_details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar .logo_details .icon{
+  opacity: 0;
+  transition: all 0.5s ease ;
+}
+
+
+
+.sidebar .logo_details .logo_name{
+  color:black;
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.sidebar.open .logo_details .icon,
+.sidebar.open .logo_details .logo_name{
+  opacity: 1;
+}
+
+.sidebar .logo_details #btn{
+  position: absolute;
+  top:50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.sidebar.open .logo_details #btn{
+  text-align: right;
+}
+
+.sidebar i{
+  color:black;
+  height: 60px;
+  line-height: 60px;
+  min-width: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.sidebar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+
+.sidebar li{
+  position: relative;
+  margin:8px 0;
+  list-style: none;
+}
+
+.sidebar li .tooltip{
+  position: absolute;
+  top:-20px;
+  left:calc(100% + 15px);
+  z-index: 3;
+  background-color: var(--color-white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 14px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.sidebar.open li .tooltip{
+  display: none;
+}
+
+.sidebar input{
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+  outline: none;
+  height: 35.6px;
+  width: 35px;
+  border:none;
+  border-radius: 5px;
+  background-color: #3E3FD8;
+  transition: all .5s ease;
+}
+
+.sidebar input::placeholder{
+  color:#ffffff
+}
+
+.sidebar.open input{
+  width: 100%;
+  padding: 0 20px 0 50px;
+}
+
+.sidebar .bx-search{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background-color: #3E3FD8;
+  color: white;
+}
+
+.sidebar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  background-color: white;
+  position: relative;
+  transition: all .5s ease;
+  z-index: 12;
+}
+
+.sidebar li a::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  background-color: #3E3FD8;
+  border-radius: 5px;
+  transform-origin: left;
+  z-index: -2;
+}
+
+.sidebar li a:hover::after{
+  transform: scaleX(1);
+  color:var(--color-default)
+}
+
+.sidebar li a .link_name{
+  color:black;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sidebar li a:hover .link_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color:white
+}
+
+.sidebar.open li a .link_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar li i{
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.sidebar li.profile{
+  position: fixed;
+  height: 60px;
+  width: 78px;
+  left: 0;
+  bottom:-8px;
+  padding:10px 14px;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.sidebar.open li.profile{
+  width: 250px;
+}
+
+.sidebar .profile .profile_details{
+  display: flex;
+  align-items: center;
+  flex-wrap:  nowrap;
+}
+
+.sidebar li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar li.profile .name,
+.sidebar li.profile .designation{
+  font-size: 15px;
+  font-weight: 400;
+  color:black;
+  white-space: nowrap;
+}
+
+.sidebar li.profile .designation{
+  font-size: 12px;
+}
+
+.sidebar .profile #log_out{
+  position: absolute;
+  top:50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidebar.open .profile #log_out{
+  width: 50px;
+  background: none;
+}
+
+.home-section{
+  position: relative;
+  background-color: #F5F6FA;
+  min-height: 100vh;
+  top: 3px;
+  left:78px;
+  width: calc(100% - 78px);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.home-section .text{
+  display: inline-block;
+  color:black;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 78px;
+  margin-left: 20px;
+}
+
+.sidebar.open ~ .home-section{
+  left:250px;
+  width: calc(100% - 250px);
+}
+
+.nav-list .active {
+  background-color: #f0f0f0; /* Highlight background color */
+  color: #007bff; /* Text and icon color */
+}
+
+.nav-list .active i {
+  color: #007bff; /* Icon color */
+}
+
+/* Default styles for all links */
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black; /* Default text color */
+  background-color: white; /* Default background color */
+  transition: all 0.3s ease; /* Smooth transitions */
+  padding: 1px;
+  border-radius: 5px; /* Optional for rounded corners */
+}
+
+/* Active state styles */
+.sidebar li a.active {
+  background-color: #3E3FD8; /* Blue background */
+  color: white; /* White text */
+}
+
+/* Icon color for active state */
+.sidebar li a.active i {
+  color: white; /* White icon */
+}
+
+/* Text color for active state */
+.sidebar li a.active .link_name {
+  color: white; /* White text */
+}
+

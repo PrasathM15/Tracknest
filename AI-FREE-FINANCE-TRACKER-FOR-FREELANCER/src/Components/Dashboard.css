@@ -1,0 +1,160 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h4 {
+  color: #111827;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+/* Layout Adjustments */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: calc(8cm);
+ margin-top: -30px;
+}
+
+/* Top Section: Cards */
+.top-section {
+  display: flex;
+  gap: 56px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+/* General Card Styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  text-align: left;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  max-width: 300px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Icon Container */
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2563eb; /* Blue background for the icon */
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Content */
+.card-content {
+  margin-top: 0px;
+  padding-left: 75px; /* Shift text content to the right */
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: inherit; /* Use the inherited color from the card */
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: inherit; /* Use the inherited color from the card */
+}
+
+.card p.subtitle {
+  font-size: 0.740rem;
+  font-weight: 500;
+  color: #c0bebe; /* Subtle gray text for subtitles */
+  margin-top: 8px;
+}
+
+/* Blue Card Specific Styling */
+.card-blue {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+.card-blue .card-icon {
+  background-color: #2563eb;
+}
+
+/* Yellow Card Specific Styling (2nd Card) */
+.card-yellow {
+  background: #ffffff;
+  color: #111827; /* Black text for visibility */
+}
+
+.card-yellow .card-icon {
+  background-color: #f59e0b; /* Yellow icon */
+}
+
+/* Red Card Specific Styling (3rd Card) */
+.card-red {
+  background: #ffffff;
+  color: #111827; /* Black text for visibility */
+}
+
+.card-red .card-icon {
+  background-color: #ef4444; /* Red icon */
+}
+
+/* Content Section */
+.chart-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.chart-container {
+flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  max-width: 650px;
+  height: 370px;
+}
+
+.pie-chart-container {
+  margin-left: 15px;
+  max-width: 330px;
+  max-height: 370px;
+}
