@@ -5,6 +5,7 @@ Figma Design and prototype : https://www.figma.com/design/BFvcCPcZcLJ9RTdepUwwuN
 
 How to run the project?
 
+(App Required visual sudio code ,node js ,postman)
 Step 1:Open the folder in Visual Studio Code.
 
 Step 2:create a new terminal and give "cd AI-FREE-FINANCE-TRACKER-FOR-FREELANCER" to go to path of the folder and press enter and after entering into folder give "npm install" to install all packages required.
