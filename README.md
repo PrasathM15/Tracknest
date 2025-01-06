@@ -40,12 +40,11 @@ click create databse and create a database and come back to main page of cluster
 Step 7:click the browse collection in clusters we can able to see the submitted data of the user.
 
 Step 8:To host/Deploy the backend use "Render.com" click add new site and click webservice and give the path of backend folder in githhub and give the root directory as "Backend" because the folder name is backend
-
 in build command give npm install and start command give node server.js now the hosted link should be replaced in all the frontend file 
 
 (eg:replace "http://localhost:5000/api/profile" into "https://finance-tracker-wknd.onrender.com/api/profile" )
 
-Step 9 :For the frontend run the code "npm run build" now you can able to see build folder now go to the "netlify.com" and Click static website put your build folder manually 
+Step 9 :For the frontend run the code "npm run build" now you can able to see build folder now go to the "netlify.com" and Click static website put your build folder manually. 
 
 Step 10:now your website is hosted succesfully.
 
