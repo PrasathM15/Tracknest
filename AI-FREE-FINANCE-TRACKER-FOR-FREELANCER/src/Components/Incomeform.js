@@ -23,7 +23,7 @@ const Incomeform = () => {
     };
 
     try {
-      const response = await fetch('https://finance-tracker-wknd.onrender.com/api/incomes', {
+      const response = await fetch('http://localhost:5000/api/incomes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ const Budget = () => {
   useEffect(() => {
     const fetchBudgets = async () => {
       try {
-        const response = await fetch("https://finance-tracker-wknd.onrender.com/api/budgets");
+        const response = await fetch("http://localhost:5000/api/budgets");
         const data = await response.json();
         const fetchedBudgets = data.budgets || [];
 

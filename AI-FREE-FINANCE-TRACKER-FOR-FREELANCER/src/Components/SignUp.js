@@ -49,7 +49,7 @@ const SignUp = () => {
       return;
     }
 
-    const apiUrl = 'https://finance-tracker-wknd.onrender.com/signup'; // Backend endpoint
+    const apiUrl = 'http://localhost:5000/signup'; // Backend endpoint
     try {
       const response = await fetch(apiUrl, {
         method: 'POST',

@@ -61,7 +61,7 @@ export default function ExpenseForm() {
   //});
 
     try {
-      const response = await fetch("https://finance-tracker-wknd.onrender.com/api/expenses", {
+      const response = await fetch("http://localhost:5000/api/expenses", {
         method: "POST",
         body: formData,
       });

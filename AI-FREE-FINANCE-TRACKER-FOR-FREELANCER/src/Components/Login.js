@@ -21,7 +21,7 @@ const Login = () => {
       const fetchUserDetails = async () => {
         if (email) {
           try {
-            const response = await fetch(`https://finance-tracker-wknd.onrender.com/login?email=${email}`);
+            const response = await fetch(`http://localhost:5000/login?email=${email}`);
             const data = await response.json();
             if (!response.ok) {
               throw new Error(data.message || "Email or password incorrect");

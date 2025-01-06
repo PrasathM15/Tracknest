@@ -42,7 +42,7 @@ export default function Expense() {
 
   const fetchExpenses = async () => {
     try {
-      const response = await fetch("https://finance-tracker-wknd.onrender.com/api/expenses");
+      const response = await fetch("http://localhost:5000/api/expenses");
       const data = await response.json();
       setExpenses(data.expenses);
      
@@ -61,7 +61,7 @@ export default function Expense() {
       if (budgetTitle) query.append("budgetTitle", budgetTitle);
       if (amount) query.append("amount", amount);
 
-      const response = await fetch(`https://finance-tracker-wknd.onrender.com/api/expenses?${query.toString()}`
+      const response = await fetch(`http://localhost:5000/api/expenses?${query.toString()}`
       );
       const data = await response.json();
       // Calculate and update total amount for filtered expenses
@@ -237,7 +237,7 @@ export default function Expense() {
                   <td>
                     {expenseDetail.attachment && (
                       <a
-                        href={`https://finance-tracker-wknd.onrender.com/uploads/${expenseDetail.attachment}`}
+                        href={`http://localhost:5000/uploads/${expenseDetail.attachment}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

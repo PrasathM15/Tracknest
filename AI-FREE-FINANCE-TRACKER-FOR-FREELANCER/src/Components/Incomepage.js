@@ -36,7 +36,7 @@ const Incomepage = () => {
   useEffect(() => {
     const fetchIncomes = async () => {
       try {
-        const response = await fetch('https://finance-tracker-wknd.onrender.com/api/incomes'); // API endpoint
+        const response = await fetch('http://localhost:5000/api/incomes'); // API endpoint
         const data = await response.json();
         setIncomes(data); // Set the fetched data to state
        

@@ -27,7 +27,7 @@ export default function Invoice(){
   useEffect(() => {
     const fetchInvoices = async () => {
       try {
-        const response = await fetch('https://finance-tracker-wknd.onrender.com/api/invoice');
+        const response = await fetch('http://localhost:5000/api/invoice');
         const data = await response.json();
 
         if (data.success) {
@@ -86,8 +86,8 @@ export default function Invoice(){
       doc.text("Invoice", pageWidth / 2, margin + headerHeight/ 2+3, { align: "center" });
 
 try {
-  const logoResponse = await fetch(`https://finance-tracker-wknd.onrender.com/api/invoice/logo/${invoice.logo}`);
-  const signatureResponse = await fetch(`https://finance-tracker-wknd.onrender.com/api/invoice/signature/${invoice.signature}`);
+  const logoResponse = await fetch(`http://localhost:5000/api/invoice/logo/${invoice.logo}`);
+  const signatureResponse = await fetch(`http://localhost:5000/api/invoice/signature/${invoice.signature}`);
 
   if (logoResponse.ok && signatureResponse.ok) {
     const logoBlob = await logoResponse.blob();
@@ -249,7 +249,7 @@ try {
 
     const handlePaymentStatusChange = async (id, newStatus) => {
       try {
-        const response = await fetch(`https://finance-tracker-wknd.onrender.com/api/invoice/${id}`, {
+        const response = await fetch(`http://localhost:5000/api/invoice/${id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ paymentstatus: newStatus }),

@@ -148,8 +148,8 @@ body {
   .change-password-btn {
     padding: 8px 15px;
     font-size: 14px;
-    color: #3E3FD8;
-    background: none;
+    color: #ffffff;
+    background: #3E3FD8;
     border: 1px solid #3E3FD8;
     border-radius: 5px;
     cursor: pointer;

@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // MongoDB connection
-const mongoURI = 'mongodb+srv://sandhya488495:mongosandhya@cluster0.ajpou.mongodb.net/tracknest?retryWrites=true&w=majority';
+const mongoURI = 'mongodb+srv://iamprasath15:prasath15@cluster0.jdico.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'))
     .catch((err) => console.error('MongoDB connection error:', err));

@@ -30,7 +30,7 @@ const ProfilePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://finance-tracker-wknd.onrender.com/api/profile', {
+      const response = await fetch('http://localhost:5000/api/profile', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

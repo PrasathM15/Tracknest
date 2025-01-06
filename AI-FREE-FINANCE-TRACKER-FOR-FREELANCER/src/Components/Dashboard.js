@@ -41,7 +41,7 @@ const Dashboard = () => {
 
   const fetchExpenses = async () => {
     try {
-      const response = await fetch("https://finance-tracker-wknd.onrender.com/api/expenses");
+      const response = await fetch("http://localhost:5000/api/expenses");
       const data = await response.json();
       setExpenses(data.expenses);
       calculateTotalAmount(data.expenses);
@@ -118,7 +118,7 @@ const Dashboard = () => {
 
     const fetchIncomes = async () => {
       try {
-        const response = await fetch('https://finance-tracker-wknd.onrender.com/api/incomes'); // Replace with your backend API
+        const response = await fetch('http://localhost:5000/api/incomes'); // Replace with your backend API
         const data = await response.json();
         setIncomes(data); // Store income data
 

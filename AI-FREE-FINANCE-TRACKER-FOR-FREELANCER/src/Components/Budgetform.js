@@ -53,7 +53,7 @@ const Budgetform = () => {
   // };
 
     try {
-      const response = await fetch("https://finance-tracker-wknd.onrender.com/api/budgets", {
+      const response = await fetch("http://localhost:5000/api/budgets", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

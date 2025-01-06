@@ -22,7 +22,7 @@ const Overview = () => {
 
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`https://finance-tracker-wknd.onrender.com/api/profile?email=${email}`); // Ensure correct API URL
+        const response = await fetch(`http://localhost:5000/api/profile?email=${email}`); // Ensure correct API URL
 
         if (!response.ok) {
           const errorMessage = await response.text();
