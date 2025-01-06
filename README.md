@@ -9,13 +9,13 @@ Step 2:create a new terminal and give "cd AI-FREE-FINANCE-TRACKER-FOR-FREELANCER
 
 Step 3:Now Give "npm start" to run the frontend.
 
-(Note:To create a New raect app)
+(Note:To create a New raect app
 
 npx create-react-app Tracknest
 
 cd Tracknest
 
-npm start
+npm start)
 
 step 4: To Run the backend code open new terminal and give the path of the backend folder
 
