@@ -1,6 +1,8 @@
 # Tracknest
 Hi Guys My name is Prasath M and My Project Title is Ai Free Finance Tracker For Freelancer
 
+Figma Design and prototype : https://www.figma.com/design/BFvcCPcZcLJ9RTdepUwwuN/TrackNest?node-id=0-1&p=f&t=aUv6C5IDiBnb7tFs-0
+
 How to run the project?
 
 Step 1:Open the folder in Visual Studio Code.
